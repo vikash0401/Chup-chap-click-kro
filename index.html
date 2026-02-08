@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Unnati 🌙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🌸 Sakura Canvas -->
+<canvas id="sakura"></canvas>
+
+<!-- 🌙 Controls -->
+<button id="modeToggle" onclick="toggleMode()">🌙</button>
+<button id="musicToggle" onclick="toggleMusic()">▶️</button>
+
+<div id="container">
+
+  <!-- PAGE 1 -->
+  <section class="page active">
+    <p class="typewriter" data-text="Hey Unnati 🌙"></p>
+    <p class="typewriter" data-text="I made something for you."></p>
+    <button onclick="nextPage()">Next ➜</button>
+  </section>
+
+  <!-- PAGE 2 -->
+    <section class="page">
+    <div class="bubble">
+      <p class="typewriter" data-text="Happy Birthday, Unnati 🌙🖤"></p>
+    </div>
+
+    <div class="bubble left">
+      <p class="typewriter" data-text="From randomly ghosting me one fine day to somehow becoming someone I talk to almost every day (still kinda wild to me). Iconic behavior, honestly."></p>
+    </div>
+
+    <button onclick="nextPage()">Next ▶</button>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page">
+    <div class="bubble right">
+      <p class="typewriter" data-text="You’re someone overconfidently wrong about Bollywood movies, a professional unpaid people-pleaser, a manga paglu with Taylor Swift (🥴) permanently playing in background, and someone who sings unfairly good (you are not allowed to that)."></p>
+    </div>
+
+    <button onclick="nextPage()">Next ▶</button>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page">
+    <div class="bubble">
+      <p class="typewriter" data-text="I know the last year wasn’t easy for you. Moving on is messy, slow, and annoying, but honestly… FUCK YOU KARTIK."></p>
+    </div>
+
+    <div class="bubble left">
+      <p class="typewriter " data-text="I feel You care too deeply, love too genuinely, and that’s not a weakness, even if it feels like one sometimes."></p>
+    </div>
+
+    <button onclick="nextPage()">Next ▶</button>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="page">
+    <div class="bubble right">
+      <p class="typewriter" data-text="Thanks for forcing me to watch 365: Repeat the Year (even though I never finished it 😭)."></p>
+    </div>
+
+    <div class="bubble">
+      <p class="typewriter" data-text="Our unhinged conversations, random bakchodi, your flat’s drama, my extremely funny jokes — I wouldn’t trade this for anything. Im really glad you exist in my life."></p>
+    </div>
+
+    <button onclick="nextPage()">Next ▶</button>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section class="page">
+    <div class="bubble">
+      <p class="typewriter" data-text="I hope this year gives you peace, a lil more IQs, Vitamin D, and some Iron."></p>
+    </div>
+
+    <div class="bubble left">
+      <p class="typewriter glow" data-text="Happy 21st<3. Always here. Always cheering for you."></p>
+    </div>
+    <button onclick="openGift()">🎁 One last thing</button>
+  </section>
+
+</div>
+
+<!-- 🎁 GIFT OVERLAY -->
+<div id="giftOverlay">
+  <div class="giftBox">
+    <span class="closeGift" onclick="closeGift()">✕</span>
+    <img src="surprise.jpg" alt="Surprise">
+  </div>
+</div>
+
+<!-- 🎵 MUSIC -->
+<audio id="bg-music" loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
